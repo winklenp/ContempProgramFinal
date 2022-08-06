@@ -35,7 +35,7 @@ namespace Assignment8
                 app.UseDeveloperExceptionPage();
             }
 
-            
+            context.Database.Migrate();
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
